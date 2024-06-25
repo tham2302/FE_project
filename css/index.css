@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  /* Đặt chiều cao cho toàn bộ trang */
+  html, body {
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Phần đầu trang */
+  .header {
+    flex: 2; /* Chiếm 2/8 tức là 1/4 tổng chiều cao (25%) */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Chia header thành 8 cột bằng nhau */
+    background-color: #96c9ec; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    border-radius: 10px 10px 0 0 ; /* Bo góc trên cùng */
+    margin-top: 5px;
+  }
+  
+  .logo {
+    grid-column: 1 / span 1; /* Chiếm 1 cột đầu tiên */
+    text-align: center; /* Căn giữa nội dung */
+    padding: 10px; /* Khoảng cách xung quanh logo */
+  }
+  
+  .logo img {
+    width: 180px; /* Định dạng kích thước logo */
+    height: 180px;
+    border-radius: 50%; /* Đổi thành hình tròn */
+  }
+  
+  .school-name {
+    grid-column: 2 / span 4; /* Chiếm 7 cột tiếp theo */
+    text-align: center; /* Căn giữa theo chiều ngang */
+    font-size: 10px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    padding: 10px; /* Khoảng cách xung quanh nội dung */
+    line-height: 1.5; /* Đặt dòng chữ */
+  }
+
+  .school-info {
+    text-align: center; /* Căn giữa nội dung theo chiều ngang */
+    font-size: 24px; /* Kích thước chữ */
+    line-height: 1.5; /* Độ cao dòng */
+    padding: 20px; /* Khoảng cách xung quanh nội dung */
+    font-weight: bold; /* In đậm các chứ */
+  }
+
+  /* Định dạng màu cho từng dòng */
+  .blue_1 {
+    color: #2218da; /* Màu xanh lam cho các dòng đầu tiên */
+    font-size: 20px;
+  }
+
+  .blue_2 {
+    color: #2820cd; /* Màu xanh lam cho các dòng đầu tiên */
+    font-size: 20px;
+  }
+  
+  .red {
+    color: #e74c3c; /* Màu đỏ cho các dòng thứ ba và thứ tư */
+    font-size: 20px;
+  }
+  
+  .green {
+    color: #058036; /* Màu xanh lá cây cho dòng cuối cùng */
+    font-size: 17px;
+  }
+  
+
+  /*Phần thân trang*/
+  
+  .content {
+    flex: 5;
+    background-color: #98cbad; /* Màu nền cho phần giữa (màu xanh lục) */
+    border-radius: 0 0 10px 10px; /* Bo góc dưới cùng */
+  }
+
+  /* Phần cuối trang*/
+  
+.footer {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Chia footer thành 4 cột bằng nhau */
+    background-color: #fff; /* Màu nền cho phần cuối (màu vàng) */
+    color: #080808; /* Màu chữ */
+    border: 2px solid #d8c8c8; /* Viền đen */
+    border-radius: 10px; /* Bo góc */
+    margin-bottom: 5px;
+    
+  }
+  
+  .footer-section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: left; /* Căn lề trái cho tiêu đề */
+  }
+  
+  .footer-section p {
+    font-size: 16px;
+    text-align: left; /* Căn lề trái cho nội dung */
+    margin-left: 60px; /* Khoảng cách lề trái là 3px */
+  }
+  
