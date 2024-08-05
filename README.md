@@ -8,3 +8,11 @@ Thêm phần thống kê như sau:
 
 
 
+Cách chạy: 
+1. Tạo 1 project reactJs
+2. copy các file + thư mục bên trên cho vào thư mục public
+3. Chạy test lại: npm start
+4. 
+
+
+
